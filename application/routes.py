@@ -4,7 +4,11 @@ from application.models import Games
 @app.route('/')
 @app.route('/home')
 def home():
-    form = 
+    form = TeammakerForm()
+    message = ''
+    return render_template('home.html', form = form, message = message)
+
+@app.route('/')
 
 
 
