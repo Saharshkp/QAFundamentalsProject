@@ -1,17 +1,22 @@
+{% extends 'hq.html' %}
+
+{%block content%}
+
 <html>
     <head>
-        <title>Team form</title>
+        <style>
+            title {text-align: center;}
+            h1 {text-align: center;}
+            h2 {text-align: center;}
+            </style>
     </head>
     <body>
-        <div class='form'>
-            <form method='POST' action=''>
-                {{ form.hidden_tag() }}
-                {{ form.name.label }} {{ form.name }}
-                <br>
-                {{ form.submit }}
-                <br>
-            {{ message }}
-            </form>
-        </div>
+    <title>Directors list</title>
+    <br>
+    <h1>Welcome to my Directors list</h1>
+    <br>
+    <h2>Add to the list or update it</h2>
     </body>
 </html>
+
+{%endblock content%}

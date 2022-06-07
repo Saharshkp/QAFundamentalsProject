@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body>
+    <h1>Add a new movie or show:</h1>
+    <p>
+        <div class='add'>
+            <form method='POST' action=''>
+                {{ add.hidden_tag() }}
+                {{ add.movie_name.label }} {{ add.movie_name }}
+                <br>
+                {{ add.show_name.label }} {{ add.show_name }}
+                <br>
+                {{ add.director.label }} {{ add.director }}
+                <br>
+                {{ add.submit }}
+                <br>
+            </form>
+        </div>
+    </p>
+</body>
+
+{% endblock content %}

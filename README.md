@@ -1,1 +1,1 @@
-This is my first application project ever!
+This is my first application project ever

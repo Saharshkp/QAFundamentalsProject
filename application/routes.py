@@ -58,6 +58,6 @@ def update(id):
 def delete(id):
     workk = workk.query.get(id)
 
-    db.session.delete(game)
+    db.session.delete(work)
     db.session.commit()
     return render_template ('read.html', workk=workk.query.all())

@@ -15,6 +15,7 @@ class DirectorForm(FlaskForm):
 class WorkForm(FlaskForm):
     movie_name = StringField('Add Movie ', [validators.length(min=1, max=25), validator.DataRequired()])
     show_name = StringField('Add Show ', [validators.length(min=1, max=25), validator.DataRequired()])
+    developer = SelectField ('Who directed this? ', choices=[])
     submit = SubmitField('Add')
 
     def validate_name(self, name):
