@@ -1,8 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, validators 
 
-
-
 class DirectorForm(FlaskForm):
     Director_name = StringField('Add Director ', [validators.length(min=1, max=25), validators.DataRequired()])
     submit = SubmitField('Add')

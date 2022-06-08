@@ -1,11 +1,14 @@
 from application import app, db
-from application.models import work
+from application.models import work, director
+from flask import Flask, render_template, request, url_for, redirect
+from requests import post
+from flask_sqlalchemy import SQLAlchemy
+from wtforms import StringField, SubmitField, IntegerField
+from flask_wtf import FlaskForm
 
 @app.route('/')
 @app.route('/home')
 def home():
-    form = DirectorForm()
-    message = ''
     return render_template('home.html', form = form, message = message)
 
 @app.route('/add', methods = ['GET','POST'])
