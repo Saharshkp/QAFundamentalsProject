@@ -15,4 +15,4 @@ class work(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     movie = db.Column(db.String(30))
     show = db.Column(db.String(20))
-    director_id = db.Column(db.integer, db.ForeignKey('director.id'))
+    director_id = db.Column(db.Integer, db.ForeignKey('director.id'))

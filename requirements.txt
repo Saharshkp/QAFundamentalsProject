@@ -1,10 +1,10 @@
 flask
 flask_sqlalchemy
 pymysql
-flask_sqlalchemy
 wtforms
 Flask-Testing
 PyMySQL
 pytest
 pytest-cov
 requests
+Flask_wtf

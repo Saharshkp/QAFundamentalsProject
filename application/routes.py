@@ -9,6 +9,8 @@ from flask_wtf import FlaskForm
 @app.route('/')
 @app.route('/home')
 def home():
+    message = ""
+    form = DirectorForm()
     return render_template('home.html', form = form, message = message)
 
 @app.route('/add', methods = ['GET','POST'])
