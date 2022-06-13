@@ -10,9 +10,10 @@ Application:
 
 Trello Kanban Board
 
-I made this kanban board at the start of my project to order my steps.
+I made this simple overview kanban board at the start of my project to order my steps.
 
 <img width="1440" alt="Screenshot 2022-06-13 at 15 40 50" src="https://user-images.githubusercontent.com/104978039/173380244-f70241ad-e787-4642-8b11-dffce628d60e.png">
+
 
 
 Risk Assessment 
