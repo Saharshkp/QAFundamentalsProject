@@ -1,5 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SelectField, SubmitField, PasswordField, Validators 
+from wtforms import StringField, SelectField, SubmitField, PasswordField, Validators
+from wtforms.validators import DataRequired, Length, ValidationError
 
 class directorForm(FlaskForm):
     director_name = StringField('Add Director ', [validators.length(min=1, max=25), validators.DataRequired()])
@@ -12,7 +13,6 @@ class directorForm(FlaskForm):
 
 class workForm(FlaskForm):
     movie_name = StringField('Add Movie ', [validators.length(min=1, max=25), validators.DataRequired()])
-    # show_name = StringField('Add Show ', [validators.length(min=1, max=25), validators.DataRequired()])
     director = SelectField('Who directed this? ', choices=[])
     submit = SubmitField('Add')
 
@@ -20,6 +20,4 @@ class workForm(FlaskForm):
         movie_object = movie.query.filter_by(movie_name=movie_name.data).first()
         if movie_object:
             raise ValidationError ("This movie has already been added.")
-        # show_object = show.query.filter_by(show_name=show_name.data).first()
-        # if show_object:
-        #     raise ValidationError ("This show has already been added.")
+            
