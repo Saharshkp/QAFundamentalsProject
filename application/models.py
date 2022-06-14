@@ -6,13 +6,13 @@ from flask_sqlalchemy import SQLAlchemy
 from  wtforms import StringField, SubmitField, IntegerField, SelectField
 from flask_wtf import FlaskForm
 
-class director(db.Model):
+class Director(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    director_name = db.Column(db.String(20))
-    Work = db.relationship('work', backref='director')
+    director = db.Column(db.String(20))
+    work = db.relationship('Work', backref='director')
 
-class work(db.Model):
+class Work(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     movie = db.Column(db.String(30))
-    show = db.Column(db.String(20))
-    director_id = db.Column(db.Integer, db.ForeignKey('director.id'))
+    # show = db.Column(db.String(20))
+    director_id = db.Column(db.Integer, db.ForeignKey('Director.id'))

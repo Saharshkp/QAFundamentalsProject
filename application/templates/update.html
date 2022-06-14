@@ -1,0 +1,23 @@
+{% extends 'hq.html' %}
+
+{% block content %}
+
+<body>
+    <h1> What do you want to update? </h1>
+    <p>
+        <div class='update'>
+            <form method='POST' action='{{work.id}}'>
+                {{ update.movie_name.label }} {{ update.movie_name }}
+                <br>
+                <!-- {{ update.show_name.label }} {{ update.show_name }}
+                <br> -->
+                {{ update.director.label }} {{ update.director }}
+                <br>
+                {{ update.submit }}
+                <br>
+            </form>
+        </div>
+    </p>
+</body>
+
+{% endblock content %}

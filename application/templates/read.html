@@ -1,0 +1,17 @@
+{% extends 'hq.html' %}
+
+{% block content %}
+
+<body>
+    <h1>Directors</h1>
+    <p>
+        {% for work in Work %}
+        <h2>{{director.name}}, {{work.director.director_name}}</h2>
+        <a href="/update/{{work.id}}">Update</a>&nbsp;<a href="/delete/{{work.id}}">Delete</a>
+        <br>
+        {% endfor %} 
+    </p>
+
+</body>
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'hq.html' %}
+
+{% block content %}
+
+<body>
+    <h1>Add a new Director to the list:</h1>
+    <p>
+        <div class='add_director'>
+            <form method='POST' action=''>
+                {{ add_director.hidden_tag() }}
+                <br>
+                {{ add_director.director_name.label }} {{ add_director.director_name }}
+                <br>
+                {{ add_director.submit }}
+                <br>
+            </form>
+        </div>
+    </p>
+</body>
+
+{% endblock content %}
