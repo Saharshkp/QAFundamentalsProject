@@ -28,5 +28,7 @@ For the theme of the project, I chose a topic of interest for me. This being cin
 about directors. The most basic information being their name and their work. The tables show that a director can have many movies, however a movie can only
 have one director. This one to many relationship is illustrated below.
 
-<img width="776" alt="Screenshot 2022-06-15 at 15 59 40" src="https://user-images.githubusercontent.com/104978039/173860640-5220b8e3-6303-42f0-bb8d-c26fa3025471.png">
+<img width="776" alt="Screenshot 2022-06-15 at 15 59 40" src="https://user-images.githubusercontent.com/104978039/173860964-2af225fb-93ab-4b24-8417-1ff3ec1ec8b6.png">
+
+
 
