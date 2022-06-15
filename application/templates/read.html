@@ -3,16 +3,19 @@
 {% block content %}
 
 <body>
-    <h1>Directors</h1>
+    <h1> Director list </h1>
     <p>
-        {% for work in Work %}
-        {% for director in Director %}
-        <h2>{{director.name}}, {{work.director.director_name}}</h2>
-        <a href="/update/{{work.id}}">Update</a>&nbsp;<a href="/delete/{{work.id}}">Delete</a>
+        {% for director in directors %}
+        <h2>{{director.director}}</h2>
+        <ul> {% for work in director.work %}
+        <li>{{work.movie}}</li> 
+        {% endfor %}</ul>
         <br>
-        {% endfor %} 
+        <a href="/update/{{director.id}}">Update</a>&nbsp;<a href="/delete/{{director.id}}">Delete</a>
+        <br>  
+        {% endfor %}
     </p>
 
 </body>
 
-{% endblock content %}
+{% endblock %}

@@ -7,3 +7,4 @@ pytest
 pytest-cov
 requests
 Flask_wtf
+flask_testing

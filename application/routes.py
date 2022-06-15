@@ -13,13 +13,19 @@ def home():
     message = ''
     return render_template('home.html', message = message)
 
-@app.route('/add', methods = ['GET','POST'])
+def pop_dir(j):
+    directors = db.session.query(Director).all()
+    for i in directors:
+        j.director.choices.append((i.id, i.director))
+
+@app.route('/add_movie', methods = ['GET','POST'])
 def add_work():
     add = workForm()
+    pop_dir(add)
     if request.method == 'POST':
         if add.validate():
             work = Work(
-                name = add.work_name.data,
+                movie = add.movie_name.data,
                 director_id = add.director.data
             )
             db.session.add(work)
@@ -39,35 +45,29 @@ def add_director():
                 
     return render_template('dir.html', add_director=add_director)
 
-@app.route('/read', methods=['GET', 'POST'])
+@app.route('/read', methods=['GET'])
 def read():
-    # movies = Work.query.all()
-    # directors = Director.query.all()
-    form = directorForm
-    dirr = Director.query.join(Work).all()
-    workk = db.session.query(Work).all()
-    for i in workk:
-        form.director_name.choices.append((i.id.i.director_name))
+    works = Work.query.all()
+    directors = Director.query.all()
         
-    return render_template('read.html', work=Work, director=Director)
+    return render_template('read.html', works=works, directors=directors)
 
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def update(id):
-    work = Work.query.get(id)
-    update = WorkForm()
-        
+    director = Director.query.get(id)
+    update = directorForm()
+    
     if request.method == 'POST':
-        movie.name = update.movie_name.data
-        work.director_id = update.director.data
-
+        director.director= update.director_name.data
+        db.session.commit()
+        
         return redirect(url_for('read'))
 
-    return render_template('update.html', work=Work, update=update)
+    return render_template('update.html', work=director, update=update)
 
 @app.route('/delete/<int:id>', methods=['GET'])
 def delete(id):
-    work = Work.query.get(id)
-
-    db.session.delete(work)
+    director = Director.query.get(id)
+    db.session.delete(director)
     db.session.commit()
     return render_template ('read.html', work=Work.query.all())
