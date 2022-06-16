@@ -30,7 +30,11 @@ have one director. This one to many relationship is illustrated below.
 
 <img width="773" alt="Screenshot 2022-06-15 at 16 04 28" src="https://user-images.githubusercontent.com/104978039/173861060-27d05e7f-4a00-4c45-9035-6c4456462298.png">
 
+Flask Unit Testing
 
+After completing my Flask CRUD application. I added a pytest series of tests to cover my work and ensure it is working as intended.
+I created a new folder with a test_app.py file to store all the tests. I added a test database and sample answers to simulate my application and then delete the database to ensure that the live database is unaffected.
+You can see the results of my pytest from Visual Studio Code screenshot below.
 
-
+<img width="1199" alt="Screenshot 2022-06-16 at 14 14 40" src="https://user-images.githubusercontent.com/104978039/174079619-38550b8b-5771-41aa-ae36-4d94df0359e3.png">
 
