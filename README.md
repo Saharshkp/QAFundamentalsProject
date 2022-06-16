@@ -38,3 +38,10 @@ You can see the results of my pytest from Visual Studio Code screenshot below.
 
 <img width="1199" alt="Screenshot 2022-06-16 at 14 14 40" src="https://user-images.githubusercontent.com/104978039/174079619-38550b8b-5771-41aa-ae36-4d94df0359e3.png">
 
+CI-DI pipeline
+
+This is a flowchart illustrating the roles of each program in this project. This allow you to see how the programs work together to ensure a safe and working application.
+
+<img width="502" alt="Screenshot 2022-06-16 at 14 39 27" src="https://user-images.githubusercontent.com/104978039/174082880-da131eb4-4315-42d4-aa49-382fab48c054.png">
+
+
