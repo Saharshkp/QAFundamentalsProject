@@ -124,3 +124,9 @@ Possible Future Updates
 Conclusion
 
 To summarise, I would like to say that I am pleased with the outcome of this project. The dark cloud of the deployement failure will definitely shade me until I master that topic. However, based on my past experience being none, I believe that I have proved that I am open to learn and go the extra step to align myself with my other more experienced colleagues. I have an excellent understanding of Flask and I am excited about learning more about it. This is exactly the reason I accepted this role. I loved working on this project and seeing the little intricate details of these languages and how they work together has sparked a big interest for me and I am looking forward to developing my knowledge and challenging myself to exceed expectations especially for an author with no prior experience. I do believe that with my ambitioin and drive and defiinitely more experience, I ican prove myself to be a successful DevOps Engineer.
+
+
+
+Credits
+
+I would like to thank Earl Gray, Adam Gray and Leon Robinson for their assistance throughout my project. Also, I thank them for their patience as I know I asked simple questions however, it is only due to my inexperience. They all motivated me to keep working and improving.
