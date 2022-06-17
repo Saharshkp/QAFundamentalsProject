@@ -35,14 +35,6 @@ have one director. This one to many relationship is illustrated below.
 
 
 
-CICD pipeline
-
-This is a flowchart illustrating the roles of each program in this project. This allow you to see how the programs work together to ensure a safe and working application.
-
-<img width="502" alt="Screenshot 2022-06-16 at 14 39 27" src="https://user-images.githubusercontent.com/104978039/174082880-da131eb4-4315-42d4-aa49-382fab48c054.png">
-
-
-
 Flask Unit Testing
 
 After completing my Flask CRUD application. I added a pytest series of tests to cover my work and ensure it is working as intended.
@@ -92,6 +84,16 @@ The next screenshot shows the delete function at work. It has removed a director
 The next and final screenshot shows the update function. It allows you to amend the directors name.
 
 <img width="1440" alt="Screenshot 2022-06-17 at 12 26 24" src="https://user-images.githubusercontent.com/104978039/174290324-f4623cd3-0b30-4996-9f8e-e0703c90b248.png">
+
+
+
+CICD pipeline
+
+This is a flowchart illustrating the roles of each program in this project. This allow you to see how the programs work together to ensure a safe and working application.
+
+<img width="502" alt="Screenshot 2022-06-16 at 14 39 27" src="https://user-images.githubusercontent.com/104978039/174082880-da131eb4-4315-42d4-aa49-382fab48c054.png">
+
+
 
 Known Application issues
 
