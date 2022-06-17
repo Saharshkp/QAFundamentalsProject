@@ -33,6 +33,16 @@ have one director. This one to many relationship is illustrated below.
 <img width="773" alt="Screenshot 2022-06-15 at 16 04 28" src="https://user-images.githubusercontent.com/104978039/173861060-27d05e7f-4a00-4c45-9035-6c4456462298.png">
 
 
+CI-DI pipeline
+
+This is a flowchart illustrating the roles of each program in this project. This allow you to see how the programs work together to ensure a safe and working application.
+
+<img width="502" alt="Screenshot 2022-06-16 at 14 39 27" src="https://user-images.githubusercontent.com/104978039/174082880-da131eb4-4315-42d4-aa49-382fab48c054.png">
+
+Application Design Output
+
+
+
 Flask Unit Testing
 
 After completing my Flask CRUD application. I added a pytest series of tests to cover my work and ensure it is working as intended.
@@ -41,11 +51,12 @@ You can see the results of my pytest from Visual Studio Code screenshot below.
 
 <img width="1199" alt="Screenshot 2022-06-16 at 14 14 40" src="https://user-images.githubusercontent.com/104978039/174079619-38550b8b-5771-41aa-ae36-4d94df0359e3.png">
 
+Jenkins 
 
-CI-DI pipeline
+Once the pytest had been passed, the next step is to impliment automatic testing. Via Jenkins, I was able to create a pipeline using my GitHub link. I ran a build on Jenkins and the results are displayed below for this.
 
-This is a flowchart illustrating the roles of each program in this project. This allow you to see how the programs work together to ensure a safe and working application.
+<img width="448" alt="Screenshot 2022-06-17 at 12 01 57" src="https://user-images.githubusercontent.com/104978039/174286736-8a9a2117-4a76-4bf7-9a2f-c87dcb9b8728.png">
 
-<img width="502" alt="Screenshot 2022-06-16 at 14 39 27" src="https://user-images.githubusercontent.com/104978039/174082880-da131eb4-4315-42d4-aa49-382fab48c054.png">
+Once the pytest had been passed, the next step is to impliment automatic testing. Via Jenkins, I was able to create a pipeline using my GitHub link. I ran a build on Jenkins and the results are displayed below for this.
 
 
