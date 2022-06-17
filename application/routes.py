@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from wtforms import StringField, SubmitField, IntegerField
 from flask_wtf import FlaskForm
 
+
 @app.route('/')
 @app.route('/home', methods = ['GET'])
 def home():
