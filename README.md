@@ -39,10 +39,6 @@ This is a flowchart illustrating the roles of each program in this project. This
 
 <img width="502" alt="Screenshot 2022-06-16 at 14 39 27" src="https://user-images.githubusercontent.com/104978039/174082880-da131eb4-4315-42d4-aa49-382fab48c054.png">
 
-Application Design Output
-
-
-
 Flask Unit Testing
 
 After completing my Flask CRUD application. I added a pytest series of tests to cover my work and ensure it is working as intended.
@@ -58,5 +54,35 @@ Once the pytest had been passed, the next step is to impliment automatic testing
 <img width="448" alt="Screenshot 2022-06-17 at 12 01 57" src="https://user-images.githubusercontent.com/104978039/174286736-8a9a2117-4a76-4bf7-9a2f-c87dcb9b8728.png">
 
 Once the pytest had been passed, the next step is to impliment automatic testing. Via Jenkins, I was able to create a pipeline using my GitHub link. I ran a build on Jenkins and the results are displayed below for this.
+
+Application design output
+
+This section shows my CRUD application with all the pages when browsing through.
+
+Home page
+
+<img width="1439" alt="Screenshot 2022-06-17 at 12 25 25" src="https://user-images.githubusercontent.com/104978039/174289893-c0e5d122-80ed-482a-8e05-e47b03829df4.png">
+
+Add director Page
+
+<img width="1440" alt="Screenshot 2022-06-17 at 12 25 35" src="https://user-images.githubusercontent.com/104978039/174289956-00f4fa33-c605-4a4f-89f0-0c67de0ad107.png">
+
+Add movie and assign director page
+
+<img width="1440" alt="Screenshot 2022-06-17 at 12 25 45" src="https://user-images.githubusercontent.com/104978039/174290032-15d58928-48ea-4884-b58f-317a77bce193.png">
+
+Read page
+
+I added many names to this list.
+
+<img width="1440" alt="Screenshot 2022-06-17 at 12 25 56" src="https://user-images.githubusercontent.com/104978039/174290114-8d23eaea-9ec3-4fd1-8a15-ffe9938b0c32.png">
+
+The next screenshot shows the delete function at work. It has removed a director from this list.
+
+<img width="1440" alt="Screenshot 2022-06-17 at 12 26 07" src="https://user-images.githubusercontent.com/104978039/174290224-f638093e-0cad-4af2-ac68-dc0173a5d03a.png">
+
+The next and final screenshot shows the update function. It allows you to amend the directors name.
+
+<img width="1440" alt="Screenshot 2022-06-17 at 12 26 24" src="https://user-images.githubusercontent.com/104978039/174290324-f4623cd3-0b30-4996-9f8e-e0703c90b248.png">
 
 
